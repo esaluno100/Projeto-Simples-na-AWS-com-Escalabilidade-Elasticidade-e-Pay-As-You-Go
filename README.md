@@ -262,7 +262,7 @@ Confirme e finalize o processo de upload para garantir que todos os arquivos sej
 - **Upload de nova versão**: Caso você altere os arquivos, faça o upload novamente para garantir que a versão mais recente seja carregada no bucket.
 - **Cache do navegador**: Limpe o cache do navegador ou force uma atualização para garantir que as alterações mais recentes sejam exibidas.4
 
-#### [Visitem o site com uma apresentação deste projeto com um visual incrível] (https://gamma.app/docs/Projeto-Simples-na-AWS-Escalabilidade-e-Economia-na-Pratica--es1wps9xvckwote?mode=doc)
+#### [Visitem o site com uma apresentação deste projeto com um visual incrível] (https://projeto-simples-na-aws-00zg9rn.gamma.site/)
 
   ## **Contribuições**
 
