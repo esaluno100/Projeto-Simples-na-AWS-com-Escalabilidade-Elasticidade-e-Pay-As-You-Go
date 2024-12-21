@@ -115,68 +115,8 @@ ________________________________________
  - Configure index.html como o arquivo de índice da hospedagem.
 
 ## Código HTML (index. html) 💻
-  - Aqui está um exemplo do arquivo index.html que pode ser usado para monitoramento de estoque
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoramento de Estoque</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .container {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .stock-item {
-            margin: 10px 0;
-        }
-        .stock-item p {
-            margin: 5px 0;
-        }
-        .status {
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .low {
-            background-color: #ff4d4d;
-            color: #fff;
-        }
-        .high {
-            background-color: #4caf50;
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Monitoramento de Estoque</h1>
-        <div class="stock-item">
-            <p>Produto: <strong>Produto A</strong></p>
-            <p>Nível de Estoque: <span class="status low">Baixo</span></p>
-        </div>
-        <div class="stock-item">
-            <p>Produto: <strong>Produto B</strong></p>
-            <p>Nível de Estoque: <span class="status high">Alto</span></p>
-        </div>
-    </div>
-</body>
-</html>
+
 
   5. Acessar o Site 🌍
 Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
