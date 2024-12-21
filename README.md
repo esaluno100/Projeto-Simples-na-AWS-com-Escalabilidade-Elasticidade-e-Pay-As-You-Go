@@ -135,6 +135,13 @@ Este projeto demonstra a criação de uma aplicação simples que utiliza servi�
 
 ## Código HTML (index.html) 💻
 
+---
+
+## Imagem do Projeto
+![Screenshot do Projeto](https://github.com/esaluno100/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go/blob/main/Pagina%20monitoramento%20Estoque.png)
+
+---
+
 Aqui está um exemplo do arquivo `index.html` que pode ser usado para monitoramento de estoque:
 
 ```html
@@ -270,6 +277,7 @@ Aqui está um exemplo do arquivo `index.html` que pode ser usado para monitorame
     </script>
 </body>
 </html>
+
 
 ## Acessar o Site 🌍
 - Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
