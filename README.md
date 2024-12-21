@@ -114,7 +114,7 @@ ________________________________________
  - Defina o arquivo index.html como o arquivo principal:
  - Configure index.html como o arquivo de índice da hospedagem.
 
-## Código HTML (index.html) 💻
+## Código HTML (index. html) 💻
   - Aqui está um exemplo do arquivo index.html que pode ser usado para monitoramento de estoque
 
 <!DOCTYPE html>
