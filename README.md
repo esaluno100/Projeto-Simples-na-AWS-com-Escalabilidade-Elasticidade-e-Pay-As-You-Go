@@ -114,9 +114,162 @@ ________________________________________
  - Defina o arquivo index.html como o arquivo principal:
  - Configure index.html como o arquivo de índice da hospedagem.
 
-## Código HTML (index. html) 💻
+# Meu Projeto
 
-![Código do HTML](https://github.com/esaluno100/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go/blob/main/arquivo%20do%20c%C3%B3digo%20do%20%20Html%20completo.png)
+## Visão Geral
+Este projeto demonstra a criação de uma aplicação simples que utiliza serviços da AWS para garantir escalabilidade, elasticidade e o modelo de pagamento pay-as-you-go.
+
+---
+
+## Instruções
+
+- Após configurar o bucket e fazer o upload do arquivo HTML, siga estas etapas:
+  - Envie os arquivos do seu site:
+    - Clique em **Fazer Upload** no console do S3.
+    - Adicione os arquivos necessários:
+      - `index.html` (obrigatório)
+      - Outros arquivos como `styles.css` ou imagens, se necessário.
+    - Confirme e finalize o upload.
+
+---
+
+## Código HTML (index.html) 💻
+
+Aqui está um exemplo do arquivo `index.html` que pode ser usado para monitoramento de estoque:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Estoque</title>
+    <style>
+        /* Estilização do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Estilização do container principal */
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+
+        /* Título */
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Itens do estoque */
+        .stock-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .stock-item p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Status do estoque */
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .low {
+            background-color: #ff4d4d;
+        }
+
+        .high {
+            background-color: #4caf50;
+        }
+
+        .medium {
+            background-color: #ffc107;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento de Estoque</h1>
+        <div class="stock-item" id="itemA">
+            <p>Produto A</p>
+            <div class="status" id="statusA">Estoque Baixo</div>
+        </div>
+        <div class="stock-item" id="itemB">
+            <p>Produto B</p>
+            <div class="status" id="statusB">Estoque Médio</div>
+        </div>
+        <div class="stock-item" id="itemC">
+            <p>Produto C</p>
+            <div class="status" id="statusC">Estoque Suficiente</div>
+        </div>
+        <div>
+            <h2>Atualizar Estoque</h2>
+            <label for="produto">Selecione o Produto:</label>
+            <select id="produto">
+                <option value="A">Produto A</option>
+                <option value="B">Produto B</option>
+                <option value="C">Produto C</option>
+            </select>
+            <br><br>
+            <label for="quantidade">Quantidade em Estoque:</label>
+            <input type="number" id="quantidade" placeholder="Digite a quantidade">
+            <br><br>
+            <button onclick="atualizarEstoque()">Atualizar</button>
+        </div>
+    </div>
+
+    <script>
+        function atualizarEstoque() {
+            // Obtém os valores do formulário
+            const produto = document.getElementById("produto").value;
+            const quantidade = parseInt(document.getElementById("quantidade").value);
+
+            // Determina o status com base na quantidade
+            let statusText = "";
+            let statusClass = "";
+
+            if (quantidade <= 10) {
+                statusText = "Estoque Baixo";
+                statusClass = "low";
+            } else if (quantidade <= 50) {
+                statusText = "Estoque Médio";
+                statusClass = "medium";
+            } else {
+                statusText = "Estoque Suficiente";
+                statusClass = "high";
+            }
+
+            // Atualiza o status no HTML
+            const statusElement = document.getElementById(`status${produto}`);
+            statusElement.textContent = statusText;
+            statusElement.className = `status ${statusClass}`;
+        }
+    </script>
+</body>
+</html>
 
 ## Acessar o Site 🌍
 - Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
