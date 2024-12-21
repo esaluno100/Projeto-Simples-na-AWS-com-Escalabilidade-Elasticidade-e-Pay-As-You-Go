@@ -116,59 +116,42 @@ ________________________________________
 
 ## Código HTML (index. html) 💻
 
+![Código do HTML](https://github.com/esaluno100/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go/blob/main/arquivo%20do%20c%C3%B3digo%20do%20%20Html%20completo.png)
+
+## Acessar o Site 🌍
+- Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
+- Envie os arquivos do seu site
+
+- Clique em Fazer Upload no console do S3.
+- Adicione os arquivos necessários:
+- index.html (obrigatório)
+- Outros arquivos como styles.css ou imagens, se necessário.
+- Confirme e finalize o upload.
+- Você pode acessar seu site estático pela URL fornecida pelo S3. A URL será algo como
+
+- http://nome-do-bucket.s3-website-us-east-1.amazonaws.com
 
 
-  5. Acessar o Site 🌍
-Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
-Envie os arquivos do seu site:
-
-Clique em Fazer Upload no console do S3.
-Adicione os arquivos necessários:
-index.html (obrigatório)
-Outros arquivos como styles.css ou imagens, se necessário.
-Confirme e finalize o upload.
- você pode acessar seu site estático pela URL fornecida pelo S3. A URL será algo como:
-
-http://nome-do-bucket.s3-website-us-east-1.amazonaws.com
-
--**Observação Necessária : Permissões do Bucket:
-
-Verifique se as permissões do bucket permitem acesso público. A política básica para permitir acesso público é:
-
-{
-"Version": "2012-10-17",
- "Statement": [
- {
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::nome-do-bucket/*"
-  }
-
- ]
-
-}
-
-Faça o Upload do Arquivo HTML 📤
+##Faça o Upload do Arquivo HTML 📤
 Envie os arquivos do seu site seguindo estas etapas:
 
-Clique em Fazer Upload no console do S3:
+## Clique em Fazer Upload no console do S3:
 
-Abra o console do AWS S3 e selecione o bucket que você criou.
+- Abra o console do AWS S3 e selecione o bucket que você criou.
 
-Clique no botão Fazer Upload.
+- Clique no botão Fazer Upload.
 
-Adicione os arquivos necessários:
+- Adicione os arquivos necessários:
 
-index.html (obrigatório): Este é o arquivo principal da sua página.
+- index.html (obrigatório): Este é o arquivo principal da sua página.
 
-Outros arquivos como styles.css ou imagens, se necessário: Adicione todos os arquivos adicionais que o seu site precisar para funcionar corretamente.
+- Outros arquivos como styles.css ou imagens, se necessário: Adicione todos os arquivos adicionais que o seu site precisar para funcionar corretamente.
 
-Confirme e finalize o upload:
+- Confirme e finalize o upload:
 
-Depois de adicionar todos os arquivos, clique em Next (Próximo) e siga as instruções para configurar permissões e propriedades.
+- Depois de adicionar todos os arquivos, clique em Next (Próximo) e siga as instruções para configurar permissões e propriedades.
 
-Confirme e finalize o processo de upload para garantir que todos os arquivos sejam carregados corretamente no bucket.
+- Confirme e finalize o processo de upload para garantir que todos os arquivos sejam carregados corretamente no bucket.
   
 ### Dicas de Solução de Problemas 🛠️
 
@@ -201,8 +184,22 @@ Abra um pull request.
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
+## Observação Necessária: Permissões do Bucket
 
+Verifique se as permissões do bucket permitem acesso público. A política básica para permitir acesso público é:
 
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::nome-do-bucket/*"
+        }
+    ]
+}
 
 
 
