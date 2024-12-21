@@ -1,8 +1,9 @@
 # Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
-Aqui está um projeto simplificado que utiliza os princípios de escalabilidade, elasticidade e o modelo de pagamento pay-as-you-go, implementado com serviços básicos da AWS. O foco será criar uma aplicação web funcional usando EC2, Auto Scaling, Load Balancer e S3 para armazenamento estático.
+Aqui está um projeto simplificado que utiliza os princípios de escalabilidade, elasticidade e o modelo de pagamento pay-as-you-go, implementado com serviços básicos da AWS. 
+O foco será criar uma aplicação web funcional usando EC2, Auto Scaling, Load Balancer e S3 para armazenamento estático.
 Objetivo
 Criar uma aplicação web escalável e econômica que permite:
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Projeto Simples na AWS com Escalabilidade, Elasticidade e Pay-As-You-Go 🚀
 
 ## Visão Geral
@@ -20,119 +21,101 @@ Este projeto demonstra a criação de uma aplicação simples utilizando serviç
 - Antes de começar, você precisará de:
 - Git instalado no seu computador.
 - AWS CLI configurada com suas credenciais.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Configuração Inicial
 Abra o terminal do prompt de comando do windows (um dos modos simples)
-1. **Clone o Repositório**:
-   Use o comando git clone seguido do URL do repositório:
+ **Clone o Repositório**:
+   - Use o comando git clone seguido do URL do repositório:
    git clone https://github.com/seuusuario/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go.git
-   -**observar que é seu usuário no github que vai inserir no código acima
-2- **Entre no diretório do projeto**:
+   - observar que é seu usuário no github que vai inserir no código acima
+   - Entre no diretório do projeto
    - Após clonar, navegue até o diretório do projeto:
-     cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
-     
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     - cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
 
-## Crie a Estrutura de Arquivos 🗂️    
-Dentro do diretório do projeto, crie a estrutura básica para os arquivos de código, documentação e testes:
- 1. Crie os diretórios necessários:
-    mkdir src docs tests
-touch README.md .gitignore
- 2. Estrutura do projeto:
-    src/: Contém o código-fonte da aplicação.
-docs/: Contém a documentação do projeto.
-tests/: Contém os testes unitários e de integração.
-README.md: Este arquivo de documentação.
-.gitignore: Arquivo para especificar quais arquivos ou diretórios o Git deve ignorar.
+## 🎯 Objetivos  Crie a Estrutura de Arquivos 🗂️    
+- Dentro do diretório do projeto, crie a estrutura básica para os arquivos de código e documentação e testes:
+- Crie os diretórios necessários:
+- mkdir src docs tests
+- touch README.md .gitignore
 
-3. Configuração da AWS ⚙️
-   Para hospedar a aplicação na AWS, você deve seguir os seguintes passos:
+## Estrutura do projeto:
+    - src/: Contém o código-fonte da aplicação.
+    - docs/: Contém a documentação do projeto.
+    - tests/: Contém os testes unitários e de integração.
+    -  README.md: Este arquivo de documentação.
+    - .gitignore: Arquivo para especificar quais arquivos ou diretórios o Git deve ignorar.
 
-1- Configurar Credenciais da AWS 🛠️
-- Instale e configure o AWS CLI:
-- Se ainda não tem, instale o AWS CLI.[Instale pela Documentação da Aws] (https://aws.amazon.com/pt/cli/)
-- Configure o AWS CLI com suas credenciais usando o comando :
+ ## ⚙️ Configuração da AWS 
+   - Para hospedar a aplicação na AWS, você deve seguir os seguintes passos:
+
+   - Configurar Credenciais da AWS 🛠️
+   - Instale e configure o AWS CLI:
+   - Se ainda não tem, instale o AWS CLI.[Instale pela Documentação da Aws] (https://aws.amazon.com/pt/cli/)
+   - Configure o AWS CLI com suas credenciais usando o comando :
     aws configure
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  
-Aqui está um exemplo detalhado de como seria o README.md e a documentação para a publicação no GitHub, com passo a passo para orientar outros desenvolvedores ou usuários a configurar, entender e usar o projeto.
 
-Projeto Simples na AWS com Escalabilidade, Elasticidade e Pay-As-You-Go 🚀
-Visão Geral
-Este projeto demonstra a criação de uma aplicação simples que utiliza serviços da AWS para garantir escalabilidade, elasticidade e o modelo de pagamento pay-as-you-go. A aplicação foi configurada para monitoramento de estoque, com recursos que ajustam automaticamente a quantidade de recursos de acordo com a demanda.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Funcionalidades 🛠️
-Monitoramento de Estoque em Tempo Real: Acompanhamento dos níveis de estoque de diferentes produtos.
-Alertas Automáticos: Envio de notificações quando os níveis de estoque atingem valores críticos.
-Escalabilidade: Ajuste dinâmico dos recursos da aplicação conforme a demanda de tráfego.
-Elasticidade: Capacidade de aumentar ou reduzir os recursos computacionais automaticamente para garantir a performance.
-Pay-As-You-Go: O modelo de pagamento que só cobra pelos recursos utilizados, otimizando custos.
-Pré-requisitos 📋
-Antes de começar, você precisará de:
-Uma conta na AWS.
-Git instalado no seu computador.
-AWS CLI configurada com suas credenciais.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Passo a Passo para Configuração do Projeto 📂
-Entre no diretório do projeto:
-cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
+## ⚙️ Projeto Simples na AWS com Escalabilidade, Elasticidade e Pay-As-You-Go 🚀
+   - Visão Geral
+   - Este projeto demonstra a criação de uma aplicação simples que utiliza serviços da AWS para 
+   - Garantir escalabilidade e elasticidade.
+   - Aplicar o modelo de pagamento pay-as-you-go.
+   - A aplicação foi configurada para monitoramento de estoque, com recursos que ajustam automaticamente a quantidade de recursos de acordo com a demanda.
+________________________________________
+## Funcionalidades 🛠️
+ - Monitoramento de Estoque em Tempo Real. 
+ - Acompanhamento dos níveis de estoque de diferentes produtos.
+ - Alertas Automáticos: 
+ -	Envio de notificações quando os níveis de estoque atingem valores críticos.
+ -	Escalabilidade: 
+ - Ajuste dinâmico dos recursos da aplicação conforme a demanda de tráfego.
+ - Elasticidade: 
+ - Capacidade de aumentar ou reduzir os recursos computacionais automaticamente para garantir a performance.
+ - Pay-As-You-Go: 
+ - Modelo de pagamento que só cobra pelos recursos utilizados, otimizando custos.
+________________________________________
+## Pré-requisitos 📋
+- Antes de começar, você precisará de:
+- Uma conta na AWS.
+- Git instalado no seu computador.
+- AWS CLI configurada com suas credenciais.
+________________________________________
+## Passo a Passo para Configuração do Projeto 📂
+- Entre no diretório do projeto: 
+- cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
+- Clone o Repositório 🧑‍💻
+- Abra o terminal ou prompt de comando.
+## 2.	Clone o repositório: 
+- Use o comando git clone seguido do URL do repositório: 
+- git clone https://github.com/seuusuario/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go.git
+## 3.	Navegue até o diretório do projeto: 
+## 4.	cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
 
-1. Clone o Repositório 🧑‍💻
-Abra o terminal ou prompt de comando.
+## Configuração da AWS ⚙️
+- Para hospedar a aplicação na AWS, você deve seguir os seguintes passos:
+- Configurar Credenciais da AWS 🛠️
+- Instale e configure o AWS CLI:
+- Se ainda não tem, instale o AWS CLI.
+- Configure o AWS CLI com suas credenciais usando o comando:
+- aws configure
 
-Clone o repositório:
-Use o comando git clone seguido do URL do repositório:
-Copiar código
-git clone https://github.com/seuusuario/Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go.git
-Após clonar, navegue até o diretório do projeto:
-Copiar código
-cd Projeto-Simples-na-AWS-com-Escalabilidade-Elasticidade-e-Pay-As-You-Go
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  2. Crie a Estrutura de Arquivos 🗂️
-Dentro do diretório do projeto, crie a estrutura básica para os arquivos de código, documentação e testes:
-Crie os diretórios necessários:
-Copiar código
-mkdir src docs tests
-touch README.md .gitignore
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Estrutura do projeto:
+## Criar Bucket no S3 e Fazer Upload 📤
 
-src/: Contém o código-fonte da aplicação.
-docs/: Contém a documentação do projeto.
-tests/: Contém os testes unitários e de integração.
-README.md: Este arquivo de documentação.
-.gitignore: Arquivo para especificar quais arquivos ou diretórios o Git deve ignorar.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  3. Configuração da AWS ⚙️
-Para hospedar a aplicação na AWS, você deve seguir os seguintes passos:
+- Crie um bucket no AWS S3:
+- Vá para o console AWS S3 e crie um novo bucket com um nome único.
+- Faça upload do arquivo HTML:
 
-Configurar Credenciais da AWS 🛠️
-Instale e configure o AWS CLI:
-Se ainda não tem, instale o AWS CLI.
-Configure o AWS CLI com suas credenciais usando o comando:
-bash
-Copiar código
-aws configure
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Criar Bucket no S3 e Fazer Upload 📤
+## Faça o upload do arquivo index.html para o bucket.
+ - Defina as permissões:
+ - Certifique-se de que o arquivo seja acessível publicamente.
+ - Configurar o Bucket para Hospedagem de Site Estático 🌐
+ - Habilite a hospedagem de site estático:
+ - No painel de configurações do S3, habilite a opção "Static website hosting".
+ - Defina o arquivo index.html como o arquivo principal:
+ - Configure index.html como o arquivo de índice da hospedagem.
 
-Crie um bucket no AWS S3:
-Vá para o console AWS S3 e crie um novo bucket com um nome único.
-Faça upload do arquivo HTML:
-
-Faça o upload do arquivo index.html para o bucket.
-Defina as permissões:
-
-Certifique-se de que o arquivo seja acessível publicamente.
-Configurar o Bucket para Hospedagem de Site Estático 🌐
-Habilite a hospedagem de site estático:
-No painel de configurações do S3, habilite a opção "Static website hosting".
-Defina o arquivo index.html como o arquivo principal:
-Configure index.html como o arquivo de índice da hospedagem.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  4. Código HTML (index.html) 💻
-Aqui está um exemplo do arquivo index.html que pode ser usado para monitoramento de estoque:
+## Código HTML (index.html) 💻
+  - Aqui está um exemplo do arquivo index.html que pode ser usado para monitoramento de estoque
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -194,7 +177,7 @@ Aqui está um exemplo do arquivo index.html que pode ser usado para monitorament
     </div>
 </body>
 </html>
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   5. Acessar o Site 🌍
 Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
 Envie os arquivos do seu site:
@@ -246,7 +229,6 @@ Confirme e finalize o upload:
 Depois de adicionar todos os arquivos, clique em Next (Próximo) e siga as instruções para configurar permissões e propriedades.
 
 Confirme e finalize o processo de upload para garantir que todos os arquivos sejam carregados corretamente no bucket.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
 ### Dicas de Solução de Problemas 🛠️
 
