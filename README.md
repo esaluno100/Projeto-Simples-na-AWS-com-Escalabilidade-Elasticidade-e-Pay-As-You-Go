@@ -278,7 +278,6 @@ Aqui está um exemplo do arquivo `index.html` que pode ser usado para monitorame
 </body>
 </html>
 
-
 ## Acessar o Site 🌍
 - Após configurar o bucket e fazer o upload do arquivo HTML, Faça o Upload do Arquivo HTML
 - Envie os arquivos do seu site
@@ -306,7 +305,9 @@ Envie os arquivos do seu site seguindo estas etapas:
 
 - index.html (obrigatório): Este é o arquivo principal da sua página.
 
-- Outros arquivos como styles.css ou imagens, se necessário: Adicione todos os arquivos adicionais que o seu site precisar para funcionar corretamente.
+- Outros arquivos como styles.css ou imagens, se necessário
+
+- Adicione todos os arquivos adicionais que o seu site precisar para funcionar corretamente.
 
 - Confirme e finalize o upload:
 
@@ -318,17 +319,21 @@ Envie os arquivos do seu site seguindo estas etapas:
 
 #### **403 Forbidden**
 - **Verifique as permissões do bucket**: Certifique-se de que o bucket possui as permissões corretas para acesso público.
-- **Política de acesso público**: Confirme se a política de acesso público do bucket está configurada para permitir o acesso aos arquivos necessários.
+- **Política de acesso público**: Confirme se a política de acesso público do bucket está configurada
+para permitir o acesso aos arquivos necessários.
 
 #### **404 Not Found**
 - **Nome do arquivo**: Verifique se o nome do arquivo no bucket corresponde exatamente ao nome definido como "Documento de índice".
 - **Caminho correto**: Certifique-se de que o caminho do arquivo está correto e que não há erros de digitação.
 
 #### **Atualizações**
-- **Upload de nova versão**: Caso você altere os arquivos, faça o upload novamente para garantir que a versão mais recente seja carregada no bucket.
-- **Cache do navegador**: Limpe o cache do navegador ou force uma atualização para garantir que as alterações mais recentes sejam exibidas.4
+- **Upload de nova versão**: Caso você altere os arquivos, faça o upload novamente
+ para garantir que a versão mais recente seja carregada no bucket.
+- **Cache do navegador**: Limpe o cache do navegador ou force uma atualização
+para garantir que as alterações mais recentes sejam exibidas.4
 
-#### [Visitem o site com uma apresentação deste projeto com um visual incrível] (https://projeto-simples-na-aws-00zg9rn.gamma.site/)
+#### [Visitem o site com uma apresentação deste projeto com um visual incrível]
+ (https://projeto-simples-na-aws-00zg9rn.gamma.site/)
 
   ## **Contribuições**
 
